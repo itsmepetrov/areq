@@ -21,5 +21,7 @@
     "mocha": "^2.5.3",
     "q": "^1.4.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "is-emitter": "^1.0.0"
+  }
 }

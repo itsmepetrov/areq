@@ -1,7 +1,8 @@
 var EventEmitter = require('events');
+var isEmitter = require('is-emitter');
 
 function Areq(emitter, areqTimeout) {
-    if (! (emitter instanceof EventEmitter))
+    if (!isEmitter(emitter))
         throw new TypeError('Input emitter should be an EventEmitter.');
 
     this._emitter = emitter;
